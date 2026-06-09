@@ -1,6 +1,5 @@
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -8,14 +7,11 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-
 \usepackage[hidelinks]{hyperref}
-
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -27,7 +23,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -95,59 +90,43 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}    
 
 \begin{center}
     \textbf{\Huge \scshape Chenyu Gao} \\ \vspace{5pt}
-    % \small \faPhone\ +1 (667) 910-5300 $~|~$ 
-    \faEnvelope\ \href{mailto:chenyu.gao@vanderbilt.edu}{\underline{chenyu.gao@vanderbilt.edu}} $~|~$ 
-    \faGlobe\ \href{https://chenyugoal.github.io/}{\underline{chenyugoal.github.io}} $~|~$
-    \faLinkedin\ \href{https://www.linkedin.com/in/chenyu-gao-4633b31a4/}{\underline{LinkedIn}} $~|~$
-    \faGoogle\ \href{https://scholar.google.com/citations?hl=en&user=rKHNyWoAAAAJ&view_op=list_works&sortby=pubdate}{\underline{Google Scholar}}
+    \small
+    +1 (667) 910-5300 $|$
+    \href{mailto:chenyu.gao@vanderbilt.edu}{chenyu.gao@vanderbilt.edu} $|$
+    \href{https://chenyugoal.github.io/}{chenyugoal.github.io} $|$
+    \href{https://www.linkedin.com/in/chenyu-gao-4633b31a4/}{LinkedIn} $|$
+    \href{https://scholar.google.com/citations?hl=en&user=rKHNyWoAAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}
 \end{center}
 
+\section{Summary}
+\small{
+Applied ML scientist and final-year Ph.D. in Electrical \& Computer Engineering at Vanderbilt University, expected to graduate in November 2026. Experience at TikTok/ByteDance and insitro spanning LLM post-training, reward modeling for generative video, multimodal representation learning, diffusion models, and biomedical AI. Built large-scale ML/evaluation pipelines and production-quality signals with measurable platform impact, including LLM-driven video understanding for recommendation and creator-content ecosystems. Author of 40+ peer-reviewed publications, including eight first/co-first-author works, with contributions to \textit{Nature} and \textit{IEEE TPAMI}; inventor on one U.S. patent application.
+}
 
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
-    \item \small
-        \begin{tabularx}{0.97\textwidth}{@{} >{\bfseries}l @{\hspace{20pt}} X @{}}
-            Areas of Expertise & Multimodal Representation Learning, Generative Models, Medical Image Analysis, Computer Vision \\
-            Languages & Python, Bash \\
-            Frameworks & PyTorch, TensorFlow, Scikit-learn, Hugging Face, NumPy, Pandas, Polars\\
-            DevOps \& Cloud & Git, Docker, Singularity, HPC/Slurm, AWS (S3, EC2), Weights \& Biases \\
-        \end{tabularx}
- \end{itemize}
-
-\section{Intellectual Property}
-\begin{enumerate}[label=IP\arabic*., leftmargin=0.15 in, itemsep=0 in]
-
-    \small{
-    \item{\textbf{Chenyu Gao}, Bennett A. Landman, Michael E. Kim. 
-    ``System and Method of Brain Age Identification for Predicting Neuro-Degenerative Disease.''
-    U.S. Non-provisional Patent Application No. 19/345,706. (claims priority to U.S. Provisional Application No. 63/701,861)}
-    }
-\end{enumerate}
-
+\section{Technical Expertise}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
+\item \small{
+    \textbf{Core AI/ML:} LLM Post-Training/Fine-Tuning (SFT, RL/GRPO), Reward Modeling for Generative Video, Diffusion Models, Vision-Language Models, Multimodal Representation Learning, Self-Supervised Learning, Computer Vision \\
+    \textbf{Data Infrastructure \& Evaluation:} Large-Scale Data Organization \& Processing, Human/Model Evaluation \& Benchmarking \\
+    \textbf{Engineering:} Python, PyTorch, Hugging Face, Slurm/HPC Workflows, Docker/Singularity, AWS EC2/S3, Git \\
+}
+\end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
     \resumeSubHeadingListStart
         \resumeSubheading {Machine Learning Scientist Intern}{San Jose, CA}{TikTok (ByteDance)}{Jan 2026 -- May 2026}
         \resumeItemListStart
-            \resumeItem{Designed a reward model for video generation, leveraging GRPO (reinforcement learning) to improve spatial-temporal consistency and multi-object interaction fidelity while mitigating hallucinations.}
+            \resumeItem{Designed a reward model for video generation, leveraging GRPO (RL) to improve spatial-temporal consistency and multi-object interaction fidelity while mitigating hallucinations.}
             \resumeItem{Architected a strategy for latent-space reward evaluation using a projection module to align compressed latents with the semantic space of a pre-trained vision foundation model, incorporating object-centric inductive biases.}
+            % \resumeItem{Reduced reward-evaluation compute by 75\% by exploiting early DiT semantic-layout emergence, enabling robust video-quality scoring in under 10 denoising steps without pixel decoding.}
             \resumeItem{Reduced computational overhead by cutting required diffusion transformer (DiT) forward steps by 75\%; capitalized on the insight that video semantic layouts emerge during early DiT steps, enabling robust reward evaluation in under 10 steps while also bypassing the pixel-decoding phase.}
             \resumeItem{Developed a lightweight reward model that achieved higher alignment with human raters on target video qualities compared to large Vision-Language Models (VLMs).}
+            % \resumeItem{Integrated LLM-driven video understanding into a production Content Ecology pipeline for multidimensional video-quality scoring, driving +4.15\% feature penetration and statistically significant lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
             \resumeItem{Integrated LLM-driven video understanding into the Content Ecology pipeline to score multidimensional video quality, inspiring creators and optimizing recommendation algorithms; drove a 4.15\% increase in feature penetration and statistically significant platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
         \resumeItemListEnd
         \resumeSubheading {Data Science and Machine Learning Intern}{South San Francisco, CA}{insitro}{June 2025 -- Aug 2025}
@@ -169,11 +148,6 @@
         \resumeItemListStart
             \resumeItem{Extended the application of a lifelong learning algorithm from vision to speech tasks and validated its omnidirectional knowledge transfer on a spoken digit benchmark, contributing to a publication in the top-tier journal \textit{IEEE TPAMI}. \href{https://github.com/neurodata/ProgLearn}{[GitHub]}}
             \resumeItem{Developed and benchmarked a suite of deep learning and classical computer vision algorithms for MR image analysis, establishing performance baselines that guided subsequent research on MRI defacing.}
-        \resumeItemListEnd
-
-        \resumeSubheading{Teaching Assistant}{Baltimore, MD}{Johns Hopkins University}{Jan 2022 -- May 2022}
-        \resumeItemListStart
-            \resumeItem{Co-designed homework and projects, held office hours for the course Medical Image Analysis.}
         \resumeItemListEnd
       
     \resumeSubHeadingListEnd
@@ -200,267 +174,61 @@
 
 
 %-----------PUBLICATIONS-----------
-\section{Journal Articles}
-\begin{enumerate}[label=J\arabic*., leftmargin=0.15 in, itemsep=0 in]
+
+\section{Selected Publications \& Patent}
+\begin{enumerate}[label=S\arabic*., leftmargin=0.15 in, itemsep=1pt]
     \small{
+    \item{
+        \textbf{C Gao}*, K Xu*, et al.
+        ``Pitfalls of defacing whole-head MRI: re-identification risk with diffusion models and compromised research potential.''
+        \textit{Computers in Biology and Medicine}. 2025.
+        \textbf{[Co-first author; diffusion-model privacy red-team]}
+    }
+
+    \item{
+        \textbf{C Gao}, et al.
+        ``Brain age identification from diffusion MRI synergistically predicts neurodegenerative disease.''
+        \textit{Imaging Neuroscience}. 2025.
+        \textbf{[First author; patent-backed multimodal disease prediction]}
+    }
+
+    \item{
+        \textbf{C Gao}, et al.
+        ``Field-of-view extension for brain diffusion MRI via deep generative models.''
+        \textit{Journal of Medical Imaging}. 2024.
+        \textbf{[First author; generative medical image reconstruction]}
+    }
 
     \item{
         ME Kim, \textbf{C Gao}, et al.
         ``White matter micro-and macrostructure brain charts for the human lifespan.''
         \textit{Nature}. 2026.
+        \textbf{[Large-scale neuroimaging collaboration]}
     }
 
     \item{
-        \textbf{C Gao}*, K Xu*, et al.
-        ``Pitfalls of defacing whole-head MRI: re-identification risk with diffusion models and compromised research potential.''
-        \textit{Computers in Biology and Medicine}. 2025.
-    }
-
-    \item {
-        \textbf{C Gao}, et al.
-        ``Brain age identification from diffusion MRI synergistically predicts neurodegenerative disease.''
-        \textit{Imaging Neuroscience}. 2025.
-    }
-    
-    \item {
-        Z Li, \textbf{C Gao}, et al.
-        ``Multi-modality conditioned variational U-net for field-of-view extension in brain diffusion MRI.''
-        \textit{Magnetic Resonance Imaging}. 2026.
-    }
-    
-    \item {
-        \textbf{C Gao}, et al.
-        ``Field-of-view extension for brain diffusion MRI via deep generative models.''
-        \textit{Journal of Medical Imaging}. 2024.
-    }
-
-    \item {
-        \textbf{C Gao}, et al.
-        ``Characterizing patterns of diffusion tensor imaging variance in aging brains.''
-        \textit{Journal of Medical Imaging}. 2024.
-    }
-    
-    \item {
-        \textbf{C Gao}, BA Landman, JL Prince, A Carass.
-        ``Reproducibility evaluation of the effects of MRI defacing on brain segmentation.''
-        \textit{Journal of Medical Imaging}. 2023.
-    }
-
-    \item {
         JT Vogelstein, J Dey, \ldots, \textbf{C Gao}, et al.
         ``Simple Lifelong Learning Machines.''
         \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}. 2025.
+        \textbf{[Continual/lifelong learning]}
     }
 
-    \item {
-        ME Kim, \textbf{C Gao}, et al.
-        ``Scalable quality control on processing of large diffusion-weighted and structural magnetic resonance imaging datasets.''
-        \textit{PLoS One}. 2025.
-    }
-    
-    \item {
-        JD LeFevre, \ldots, \textbf{C Gao}, et al.
-        ``The Role of Cardiovascular Risk Factors in White Matter Tract Microstructure: A Multi‐Cohort Study in Older Adults.''
-        \textit{Alzheimer's \& Dementia}. 2025.
-    }
-
-    \item {
-        C Peter, \ldots, \textbf{C Gao}, et al.
-        ``White Matter Abnormalities and Cognition in Aging and Alzheimer Disease.''
-        \textit{JAMA neurology}. 2025.
-    }
-
-    \item {
-        AM Saunders, ME Kim, \textbf{C Gao}, et al.
-        ``Comparison and calibration of MP2RAGE quantitative T1 values to multi-TI inversion recovery T1 values.''
-        \textit{Magnetic Resonance Imaging}. 2025.
-    }
-    
-    \item {
-        AS Lorenz, \ldots, \textbf{C Gao}, et al.
-        ``Genetic architecture of the limbic white matter microstructure in aging and Alzheimer's Disease.''
-        \textit{Alzheimer's \& Dementia}. 2025.
-    }
-
-    \item {
-        A Lorenz, \ldots, \textbf{C Gao}, et al.
-        ``The effect of Alzheimer's disease genetic factors on limbic white matter microstructure.''
-        \textit{Alzheimer's \& Dementia}. 2025.
-    }
-
-    \item {
-        NR Newlin, \ldots, \textbf{C Gao}, et al.
-        ``Harmonizing 10,000 connectomes: site-invariant representation learning for multi-site analysis of network connectivity and cognitive impairment.''
-        \textit{Journal of Medical Imaging}. 2025.
-    }
-    
-    \item {
-        LW Remedios, \ldots, \textbf{C Gao}, et al.
-        ``Data-driven abdominal phenotypes of type 2 diabetes in lean, overweight, and obese cohorts from computed tomography.''
-        \textit{Journal of Medical Imaging}. 2025.
-    }
-
-    \item {
-        LW Remedios, \ldots, \textbf{C Gao}, et al.
-        ``Lifespan Pancreas Morphology for Control Versus Type 2 Diabetes Using AI on Largescale Clinical Imaging.''
-        \textit{Clinical Anatomy}. 2025.
-    }
-
-    \item {
-        AR Krishnan, \ldots, \textbf{C Gao}, et al.
-        ``Multipath cycleGAN for harmonization of paired and unpaired low‐dose lung computed tomography reconstruction kernels.''
-        \textit{Medical Physics}. 2025.
-    }
-    
-    \item {
-        G Rudravaram, \ldots, \textbf{C Gao}, et al.
-        ``Quantifying the Efficacy of Deep Learning-Driven Deformable Registra-tion in Multiplexed-Immunofluorescence Imaging for Nucleus Subtype Classification.''
-        \textit{Machine Learning for Biomedical Imaging}. 2026.
-    }
-    
-    \item {
-        KG Schilling, \ldots, \textbf{C Gao}, et al.
-        ``Head Motion in Diffusion Magnetic Resonance Imaging: Quantification, Mitigation, and Structural Associations in Large, Cross-Sectional Datasets Across the Lifespan.''
-        \textit{Human Brain Mapping}. 2025.
-    }
-
-    \item {
-        R Zhang, \ldots, \textbf{C Gao}, et al.
-        ``Enhancing Clinical Data Management Through Barcode Integration and Research Electronic Data Capture: Scalable and Adaptable Implementation Study.''
-        \textit{JMIR Formative Research}. 2025.
-    }
-
-    \item {
-        A Peterson, \ldots, \textbf{C Gao}, et al.
-        ``Sex and APOE-$\varepsilon4$ allele differences in longitudinal white matter microstructure in multiple cohorts of aging and Alzheimer’s disease.''
-        \textit{Alzheimer's \& dementia}. 2024.
-    }
-    
-    \item {
-        P Kanakaraj, \ldots, \textbf{C Gao}, et al.
-        ``DeepN4: learning N4ITK bias field correction for T1-weighted images.''
-        \textit{Neuroinformatics}. 2024.
-    }
-
-    \item {
-        ME Kim, \textbf{C Gao}, et al.
-        ``Empirical assessment of the assumptions of ComBat with diffusion tensor imaging.''
-        \textit{Journal of Medical Imaging}. 2024.
-    }
-
-    \item {
-        M Zhao, C Zhang, \textbf{C Gao}, Z Wu.
-        ``Alendronate-decorated strontium-containing bioactive glass nanoparticles with dual osteogenic and anti-osteoclastic effects for osteoporosis.''
-        \textit{Journal of Non-Crystalline Solids}. 2023.
-    }
-
-    \item {
-        L Wang, \ldots, \textbf{C Gao}, et al.
-        ``Bioactive gelatin cryogels with BMP‐2 biomimetic peptide and VEGF: a potential scaffold for synergistically induced osteogenesis.''
-        \textit{Chinese Chemical Letters}. 2022.
-    }
-
-    }
-\end{enumerate}
-
-
-\section{Conference Publications}
-\begin{enumerate}[label=C\arabic*., leftmargin=0.15 in, itemsep=0 in]
-    \small{
-    \item {
+    \item{
         Y Liu, \textbf{C Gao}, et al.
         ``MetaVoxel: Joint Diffusion Modeling of Imaging and Clinical Metadata.''
         \textit{Medical Imaging with Deep Learning}. 2026.
-    }
-    
-    \item {
-        \textbf{C Gao}, et al.
-        ``Predicting age from white matter diffusivity with residual learning.''
-        \textit{Medical Imaging 2024: Image Processing}. 2024.
-        }
-        
-    \item {
-        \textbf{C Gao}, L Jin, JL Prince, A Carass. 
-        ``Effects of defacing whole head MRI on neuroanalysis.''
-        \textit{Medical Imaging 2022: Image Processing}. 2022.
-        }
-        
-    \item {
-        E Topolnjak*, \textbf{C Gao}*, et al.
-        ``Assessment of subject head motion in diffusion MRI.''
-        \textit{Medical Imaging 2024: Image Processing}. 2024.
-        }
-    
-    \item {
-        E McMaster, L Puglisi, \textbf{C Gao}, et al.
-        ``A technical assessment of latent diffusion for Alzheimer's disease progression.''
-        \textit{Medical Imaging 2025: Image Processing}. 2025.
-    }
-    
-    \item {
-        ME Kim, K Ramadass, \textbf{C Gao}, et al.
-        ``Scalable, reproducible, and cost-effective processing of large-scale medical imaging datasets.''
-        \textit{Medical Imaging 2025: Imaging Informatics}. 2025.
+        \textbf{[Multimodal diffusion modeling]}
     }
 
-    \item {
-        Y Chang, L Xu, \textbf{C Gao}, et al.
-        ``Bundle-wise functional connectivity density and fractional amplitude of low-frequency fluctuations decrease in white matter in preclinical Alzheimer's disease and are associated with A$\beta$ levels and cognition.''
-        \textit{Medical Imaging 2025: Clinical and Biomedical Imaging}. 2025.
+    \item{
+        \textbf{Patent:} \textbf{C Gao}, BA Landman, ME Kim.
+        ``System and Method of Brain Age Identification for Predicting Neuro-Degenerative Disease.''
+        U.S. Non-provisional Patent Application No. 19/345,706.
     }
-
-    \item {
-        K Ramadass, Y Liu, ME Kim, \textbf{C Gao}, et al.
-        ``Investigating effects of air quality and weather on human brain volumes.''
-        \textit{Medical Imaging 2025: Clinical and Biomedical Imaging}. 2025.
-    }
-
-
-    \item {
-        Z Li, \ldots, \textbf{C Gao}, et al.
-        ``Approximate diffusion tractography from FLAIR MRI and anatomical context using recurrent neural networks.''
-        \textit{Medical Imaging 2025: Image Processing}. 2025.
-    }
-
-    \item {
-        S Bao, \ldots, \textbf{C Gao}, et al.
-        ``Quantitative analysis of colonic epithelial cell aging in a cell-cycle-like model: changes in nucleus and cytoplasm along the crypt axis.''
-        \textit{Medical Imaging 2025: Digital and Computational Pathology}. 2025.
-    }
-    
-    \item {
-        AR Krishnan, K Xu, T Li, \textbf{C Gao}, et al.
-        ``Inter-vendor harmonization of CT reconstruction kernels using unpaired image translation.''
-        \textit{Medical Imaging 2024: Image Processing}. 2024.
-    }
-    
-    \item {
-        T Yu, Y Li, ME Kim, \textbf{C Gao}, et al.
-        ``Tractography with T1-weighted MRI and associated anatomical constraints on clinical quality diffusion MRI.''
-        \textit{Medical Imaging 2024: Image Processing}. 2024.
-    }
-
-    \item {
-        H Xu, NR Newlin, ME Kim, \textbf{C Gao}, et al.
-        ``Evaluation of mean shift, ComBat, and CycleGAN for harmonizing brain connectivity matrices across sites.''
-        \textit{Medical Imaging 2024: Image Processing}. 2024.
-    }
-
-    \item {
-        ME Kim, HH Lee, K Ramadass, \textbf{C Gao}, et al.
-        ``Characterizing low-cost registration for photographic images to computed tomography.''
-        \textit{Medical Imaging 2024: Clinical and Biomedical Imaging}. 2024.
-    }
-    
     }
 \end{enumerate}
-
-
-% \section{Manuscripts Under Review}
-% \begin{enumerate}[label=P\arabic*., leftmargin=0.15 in, itemsep=0 in]
-%     \small{
-%     }
-% \end{enumerate}
+\vspace{-2pt}
+\small{\textit{Full publication list:} 40+ peer-reviewed publications, including 8 first/co-first-author works; see Google Scholar.}
 
 
 %-------------------------------------------
