@@ -104,7 +104,10 @@
 
 \section{Summary}
 \small{
-Applied ML scientist and final-year Ph.D. in Electrical \& Computer Engineering at Vanderbilt University, expected to graduate in November 2026. Experience at TikTok/ByteDance and insitro spanning LLM post-training, reward modeling for generative video, multimodal representation learning, diffusion models, and biomedical AI. Built large-scale ML/evaluation pipelines and production-quality signals with measurable platform impact, including LLM-driven video understanding for recommendation and creator-content ecosystems. Author of 40+ peer-reviewed publications, including eight first/co-first-author works, with contributions to \textit{Nature} and \textit{IEEE TPAMI}; inventor on one U.S. patent application.
+    Applied ML scientist and final-year Ph.D. in ECE at Vanderbilt University, expected to graduate in November 2026.
+    Industry experience at TikTok (ByteDance) and insitro spanning LLM post-training, reward modeling for video generation models, multimodal representation learning and generative models.
+    Built large-scale ML systems, evaluation pipelines, and production-quality signals with measurable platform impact.
+    Author of 40 peer-reviewed publications, including 8 first-author works, and a pending U.S. patent.
 }
 
 \section{Technical Expertise}
@@ -121,13 +124,12 @@ Applied ML scientist and final-year Ph.D. in Electrical \& Computer Engineering 
     \resumeSubHeadingListStart
         \resumeSubheading {Machine Learning Scientist Intern}{San Jose, CA}{TikTok (ByteDance)}{Jan 2026 -- May 2026}
         \resumeItemListStart
-            \resumeItem{Designed a reward model for video generation, leveraging GRPO (RL) to improve spatial-temporal consistency and multi-object interaction fidelity while mitigating hallucinations.}
-            \resumeItem{Architected a strategy for latent-space reward evaluation using a projection module to align compressed latents with the semantic space of a pre-trained vision foundation model, incorporating object-centric inductive biases.}
-            % \resumeItem{Reduced reward-evaluation compute by 75\% by exploiting early DiT semantic-layout emergence, enabling robust video-quality scoring in under 10 denoising steps without pixel decoding.}
-            \resumeItem{Reduced computational overhead by cutting required diffusion transformer (DiT) forward steps by 75\%; capitalized on the insight that video semantic layouts emerge during early DiT steps, enabling robust reward evaluation in under 10 steps while also bypassing the pixel-decoding phase.}
-            \resumeItem{Developed a lightweight reward model that achieved higher alignment with human raters on target video qualities compared to large Vision-Language Models (VLMs).}
-            % \resumeItem{Integrated LLM-driven video understanding into a production Content Ecology pipeline for multidimensional video-quality scoring, driving +4.15\% feature penetration and statistically significant lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
-            \resumeItem{Integrated LLM-driven video understanding into the Content Ecology pipeline to score multidimensional video quality, inspiring creators and optimizing recommendation algorithms; drove a 4.15\% increase in feature penetration and statistically significant platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
+            \resumeItem{\textbf{Latent-space reward modeling for video generation:} Prototyped a DiT-native reward model targeting spatial-temporal consistency and multi-object interaction fidelity in generated videos.}
+            \resumeItem{Proposed an early-step reward-evaluation strategy that scores VAE latents directly, bypassing VAE decoding and cutting DiT steps by 75\% by exploiting early stabilization of video layouts during DiT denoising.}
+            \resumeItem{Designed a \textit{Semantic Adapter} to project VAE latents into a semantic feature space distilled from a vision foundation model, enabling object-centric representation learning for evaluation of object dynamics and interactions.}
+            \resumeItem{Validated our lightweight reward model against large VLM judges, achieving stronger human-rating agreement on target video qualities, and used it as the reward signal for GRPO-style RL post-training of video generation models.}
+            \resumeItem{\textbf{LLM-driven video scoring:} Built an SFT pipeline to adapt a base LLM for multidimensional video-quality scoring, distilling rubric-guided rationales into concise outputs for higher-QPS serving.}
+            \resumeItem{Integrated LLM-derived video-quality features into a production recommendation pipeline, driving a 4.15\% increase in feature penetration and platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
         \resumeItemListEnd
         \resumeSubheading {Data Science and Machine Learning Intern}{South San Francisco, CA}{insitro}{June 2025 -- Aug 2025}
         \resumeItemListStart
