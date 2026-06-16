@@ -48,7 +48,7 @@
   \vspace{5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated PDF is machine-readable/ATS-parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -104,16 +104,16 @@
 
 \section{Summary}
 \small{
-    Applied ML scientist and final-year Ph.D. in ECE at Vanderbilt University, expected to graduate in November 2026 and seeking full-time roles.
+    Applied ML scientist and final-year ECE Ph.D. at Vanderbilt, graduating Nov 2026.
     Industry experience at TikTok (ByteDance) and insitro spanning LLM post-training, reward modeling for video generation models, multimodal representation learning, and generative models.
     Built large-scale ML systems, evaluation pipelines, and production-quality signals with measurable platform impact.
-    Author of 40+ peer-reviewed publications, including 8 first/co-first-author works, and a pending U.S. patent.
+    Author of 40+ peer-reviewed publications, including 8 first/co-first-author works, and a pending U.S. patent application.
 }
 
 \section{Technical Expertise}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
 \item \small{
-    \textbf{Core AI/ML:} LLM Post-Training/Fine-Tuning (SFT, RL/GRPO), Reward Modeling for Generative Video, Diffusion Models, Vision-Language Models, Multimodal Representation Learning, Self-Supervised Learning, Computer Vision \\
+    \textbf{Core ML:} LLM Post-Training, SFT, RL/GRPO, Reward Modeling for Generative Video, Diffusion Models, Vision-Language Models, Multimodal Representation Learning, Self-Supervised Learning, Computer Vision \\
     \textbf{Data Infrastructure \& Evaluation:} Large-Scale Data Organization \& Processing, Human/Model Evaluation \& Benchmarking \\
     \textbf{Engineering:} Python, PyTorch, Hugging Face, Slurm/HPC Workflows, Docker/Singularity, AWS EC2/S3, Git \\
 }
@@ -124,9 +124,9 @@
     \resumeSubHeadingListStart
         \resumeSubheading {Machine Learning Scientist Intern}{San Jose, CA}{TikTok (ByteDance)}{Jan 2026 -- May 2026}
         \resumeItemListStart
-            \resumeItem{\textbf{Latent-space reward modeling for video generation:} Prototyped a DiT-native reward model targeting spatiotemporal consistency and multi-object interaction fidelity in generated videos.}
+            \resumeItem{\textbf{Latent-space reward modeling for video generation:} Developed a DiT-native reward model targeting spatiotemporal consistency and multi-object interaction fidelity in generated videos.}
             \resumeItem{Proposed an early-step reward-evaluation strategy that scores VAE latents directly, bypassing VAE decoding and reducing required DiT steps by 75\% by exploiting early stabilization of video layouts during denoising.}
-            \resumeItem{Designed a \textit{Semantic Adapter} to project VAE latents into a semantic feature space distilled from a vision foundation model, enabling object-centric representation learning for evaluating object dynamics and interactions.}
+            \resumeItem{Designed a \textit{Semantic Adapter} to project VAE latents into a semantic feature space distilled from a vision foundation model, enabling object-centric evaluation of generated-video dynamics without full video decoding.}
             \resumeItem{Validated the lightweight reward model against large VLM judges, achieving stronger agreement with human ratings on target video qualities, and used it as the reward signal for GRPO-style RL post-training of video generation models.}
             \resumeItem{\textbf{LLM-driven video scoring:} Built an SFT pipeline to adapt a base LLM for multidimensional video-quality scoring, distilling rubric-guided rationales into concise outputs for higher-QPS serving.}
             \resumeItem{Integrated LLM-derived video-quality features into a production recommendation pipeline, driving a 4.15\% increase in feature penetration and platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
@@ -134,23 +134,23 @@
         
         \resumeSubheading {Data Science and Machine Learning Intern}{South San Francisco, CA}{insitro}{June 2025 -- Aug 2025}
         \resumeItemListStart
-            \resumeItem{\textbf{Image--genetics self-supervised learning:} Designed and implemented a multimodal SSL framework for target discovery, combining SimMIM-style masked image modeling with SNP-guided contrastive alignment from whole-genome sequencing data to learn heritable and biologically meaningful image embeddings.}
-            \resumeItem{\textbf{LLM-assisted genomic feature selection:} Built a human-in-the-loop LLM/ontology pipeline that reduced 1 billion whole-genome SNP candidates to a curated panel of hundreds, linking published genetic associations to biomedical ontology terms and prioritizing image-observable phenotypes for multimodal SSL.}
-            \resumeItem{Converted learned image embeddings into disease-relevant quantitative phenotypes using regression and clustering, enabling GWAS on sequenced individuals with matched imaging to recover strong candidate genetic associations and surface target-discovery hypotheses.}
+            \resumeItem{\textbf{Image--genetics self-supervised learning:} Designed a multimodal SSL framework for target discovery, combining masked image modeling with SNP-guided contrastive alignment from whole-genome sequencing data.}
+            \resumeItem{\textbf{LLM-assisted genomic feature selection:} Built a human-in-the-loop LLM/ontology pipeline that reduced 1B+ genome-wide SNP candidates to a curated panel of hundreds, linking published genetic associations to biomedical ontology terms and prioritizing image-observable phenotypes for multimodal SSL.}
+            \resumeItem{Converted learned image embeddings into disease-relevant quantitative phenotypes via regression and clustering, enabling GWAS in imaging cohorts to recover candidate genetic associations and surface target-discovery hypotheses.}
         \resumeItemListEnd
         
         \resumeSubheading {Graduate Research Assistant}{Nashville, TN}{Vanderbilt University}{July 2022 -- Present}
         \resumeItemListStart
-            \resumeItem{\textbf{Generative AI privacy and safety:} Led MRI de-identification studies evaluating the privacy--utility tradeoff of defacing methods; built a cascaded diffusion-model red-team pipeline that reconstructed high-resolution 3D facial geometry from defaced head MRI, exposing re-identification risk and motivating privacy safeguards for medical data sharing.}
-            \resumeItem{\textbf{Multimodal predictive modeling:} Developed brain-age models from diffusion and structural MRI across 13{,}398 participants and 12 datasets, leveraging micro- and macrostructural features with differential sensitivity across stages of neurodegenerative disease to support early detection; this work resulted in a U.S. patent application.}
             \resumeItem{\textbf{Large-scale ML infrastructure:} Built containerized processing, harmonization, and QC workflows for 100,000+ MRI scans from 40+ datasets across local and Slurm/HPC environments, enabling reproducible multi-cohort ML studies.}
+            \resumeItem{\textbf{Generative AI privacy and safety:} Led MRI de-identification studies evaluating the privacy--utility tradeoff of defacing methods; built a cascaded diffusion-model red-team pipeline that reconstructs high-resolution 3D facial geometry from defaced head MRI, exposing re-identification risk and motivating privacy safeguards for medical data sharing.}
+            \resumeItem{\textbf{Multimodal predictive modeling:} Developed brain-age models from diffusion and structural MRI across 13{,}398 participants and 12 datasets, leveraging micro- and macrostructural features with differential sensitivity across stages of neurodegenerative disease to support early detection; this work resulted in a U.S. patent application.}
             \resumeItem{\textbf{Generative modeling:} Co-developed conditional GAN models to extend incomplete MRI fields-of-view, rescuing otherwise unusable scans and increasing effective dataset size by 10\%; also co-developed a diffusion model for joint modeling of imaging and clinical metadata.}
         \resumeItemListEnd
 
         \resumeSubheading{Graduate Research Assistant}{Baltimore, MD}{Johns Hopkins University}{Dec 2020 -- May 2022}
         \resumeItemListStart
             \resumeItem{\textbf{Continual learning:} Extended a lifelong learning algorithm from vision to speech and validated omnidirectional knowledge transfer on a spoken-digit benchmark, contributing to an open-source library and a publication in \textit{IEEE TPAMI}.}
-            \resumeItem{\textbf{Medical image analysis:} Benchmarked deep learning and computer vision methods for MRI analysis, establishing baselines that informed subsequent research on MRI defacing, privacy protection, and data utility evaluation.}
+            \resumeItem{\textbf{Medical image analysis:} Benchmarked deep learning and computer vision methods for MRI analysis, establishing baselines for subsequent work on MRI privacy, defacing, and data utility evaluation.}
         \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -217,7 +217,7 @@
         
     \item{
         ME Kim, \textbf{C Gao}, et al.
-        ``White matter micro-and macrostructure brain charts for the human lifespan.''
+        ``White matter micro- and macrostructure brain charts for the human lifespan.''
         \textit{Nature}. 2026.
         \textbf{[Population-scale ML infrastructure; normative brain-chart modeling]}
     }
