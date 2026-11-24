@@ -114,23 +114,23 @@
 
 \section{Experience}
     \resumeSubHeadingListStart
-        \resumeSubheading {Machine Learning Scientist Intern}{San Jose, CA}{TikTok}{Jan 2026 -- May 2026}
+        \resumeSubheading {TikTok}{San Jose, CA}{Machine Learning Scientist Intern}{Jan 2026 -- May 2026}
         \resumeItemListStart
-            \resumeItem{\textbf{Latent-space reward modeling for video generation:} Developed a DiT-native reward model for spatiotemporal consistency and multi-object interaction fidelity, with a \textit{Semantic Adapter} mapping VAE latents to semantic features distilled from a vision foundation model.}
-            \resumeItem{Proposed early-step reward evaluation directly on VAE latents, exploiting early layout stabilization to reduce DiT denoising steps before scoring by 75\% and eliminate VAE decoding.}
-            \resumeItem{Achieved stronger agreement with human ratings than large VLM judges on target video qualities; used the reward model for GRPO-style RL post-training of video generation models.}
-            \resumeItem{\textbf{LLM-driven video scoring:} Built an SFT pipeline to adapt a base LLM for multidimensional video-quality scoring, distilling rubric-guided rationales into concise outputs for higher-QPS serving.}
-            \resumeItem{Built a pipeline supplying LLM-derived video-quality features to production recommendations, contributing to a 4.15\% relative increase in feature penetration and platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
+            \resumeItem{\textbf{LLM post-training for video understanding:} Built an SFT pipeline to adapt a base LLM for multidimensional video-quality scoring, distilling rubric-guided CoT rationales into compact input/output tokens for higher-QPS serving.}
+            \resumeItem{Contributed to a production pipeline supplying LLM-derived video-quality features to recommendation models, which drove a 4.15\% relative increase in feature penetration and platform-wide lifts in publish frequency (+0.03\%) and search engagement (+0.019\%).}
+            \resumeItem{\textbf{Latent-space reward modeling for video generation:} Developed a DiT-native reward model for temporal consistency and object-interaction fidelity, combining a \textit{Semantic Adapter} (mapping VAE latents to distilled DINOv3 features) with an object-centric predictor--corrector dynamics model that detects inconsistencies via inference-time mismatch.}
+            \resumeItem{Exploited early semantic-layout stabilization in VAE latent space to score intermediate denoising states directly, eliminating VAE decoding, cutting DiT denoising steps by 50\%, and achieving 53$\times$ lower latency and 5$\times$ lower GPU memory compared to VLM-as-a-judge baselines.}
+            \resumeItem{Applied the reward model to GRPO-style RL post-training and test-time scaling of video generation models, improving both automated benchmark scores and human preference win rate over base and VLM-judged baselines.}
         \resumeItemListEnd
         
-        \resumeSubheading {Data Science and Machine Learning Intern}{South San Francisco, CA}{insitro}{Jun 2025 -- Aug 2025}
+        \resumeSubheading {insitro}{South San Francisco, CA}{Data Science and Machine Learning Intern}{Jun 2025 -- Aug 2025}
         \resumeItemListStart
             \resumeItem{\textbf{Image--genetics self-supervised learning:} Designed a multimodal SSL framework for target discovery, combining masked image modeling with SNP-guided contrastive alignment from whole-genome sequencing data.}
             \resumeItem{\textbf{LLM-assisted genomic feature selection:} Built a human-in-the-loop LLM/ontology pipeline that reduced 1B+ SNPs from whole-genome sequencing to a curated panel of hundreds, using published genetic associations to prioritize image-observable phenotypes and make multimodal SSL computationally tractable.}
             \resumeItem{Converted learned image embeddings into disease-relevant quantitative phenotypes via regression and clustering, enabling GWAS in imaging cohorts to recover candidate genetic associations and surface target-discovery hypotheses.}
         \resumeItemListEnd
         
-        \resumeSubheading {Graduate Research Assistant}{Nashville, TN}{Vanderbilt University}{Jul 2022 -- Present}
+        \resumeSubheading {Vanderbilt University}{Nashville, TN}{Graduate Research Assistant}{Jul 2022 -- Present}
         \resumeItemListStart
             \resumeItem{\textbf{Large-scale ML infrastructure:} Built containerized processing, harmonization, and QC workflows for 100,000+ MRI scans from 40+ datasets across local and Slurm/HPC environments, enabling reproducible multi-cohort ML studies.}
             \resumeItem{\textbf{Generative AI privacy and safety:} Led MRI de-identification studies evaluating the privacy--utility tradeoff of defacing methods; built a cascaded diffusion-model red-team pipeline that reconstructs high-resolution 3D facial geometry from defaced head MRI, exposing re-identification risk and motivating privacy safeguards for medical data sharing.}
@@ -138,7 +138,7 @@
             \resumeItem{\textbf{Generative modeling:} Co-developed conditional GAN models to extend incomplete MRI fields of view, rescuing otherwise unusable scans and increasing effective dataset size by 10\%; also co-developed a diffusion model for joint modeling of imaging and clinical metadata.}
         \resumeItemListEnd
 
-        \resumeSubheading{Graduate Research Assistant}{Baltimore, MD}{Johns Hopkins University}{Dec 2020 -- May 2022}
+        \resumeSubheading {Johns Hopkins University}{Baltimore, MD}{Graduate Research Assistant}{Dec 2020 -- May 2022}
         \resumeItemListStart
             \resumeItem{\textbf{Continual learning:} Extended a lifelong learning algorithm from vision to speech and validated omnidirectional knowledge transfer on a spoken-digit benchmark, contributing to an open-source library (\href{https://proglearn.neurodata.io/}{\underline{link}}) and a \textit{TPAMI} paper.}
             \resumeItem{\textbf{Medical image analysis:} Benchmarked deep learning and computer vision methods for MRI analysis, establishing baselines for subsequent work on MRI privacy, defacing, and data utility evaluation.}
